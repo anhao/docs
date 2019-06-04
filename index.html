@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  
+</head>
+<body>
+  <div id="app"></div>
+ 
+ <script>
+    window.$docsify = {
+	el:'#app',
+      name: 'Alone88 文档记录学习', //站点名字
+      repo: '',//资源地址,github
+	  loadSidebar: true,//是否开启侧边栏,默认_sidebar.md
+	  auto2top:true,//切换页面后是否自动跳转到页面顶部。
+	  subMaxLevel: 10,//自定义侧边栏后默认不会再生成目录，你也可以通过设置生成目录的最大层级开启这个功能。
+	  maxLevel:10,
+	  autoHeader: true,
+	  mergeNavbar: true,
+	  search:'auto',
+    }
+  </script>
+   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+ <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+ <script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
+ <script src="//unpkg.com/docsify-copy-code"></script>
+</body>
+</html>
