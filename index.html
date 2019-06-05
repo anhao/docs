@@ -24,7 +24,25 @@
 	  autoHeader: true,
 	  mergeNavbar: true,
 	  search:'auto',
+	  plugins: [
+    function (hook) {
+      var footer = [
+        '<hr/>',
+        '<footer>',
+		'<span>Powered by <a href="https://alone88.cn" target="_blank">Alone88</span>',
+        '</footer>'
+      ].join('')
+
+      hook.afterEach(function (html) {
+        return html + footer
+      })
     }
+  ]
+    }
+	// 加载PWA
+	if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('sw.js')
+  }
   </script>
    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
