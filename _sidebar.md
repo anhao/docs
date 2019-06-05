@@ -6,4 +6,5 @@
     	* [Facade代理](php/thinkphp_facade)
   * Java
     * [Java 数据类型](java/java_01)
-
+  * Other
+    * [位运算符](bitoperation)
