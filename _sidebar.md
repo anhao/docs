@@ -7,5 +7,7 @@
   * Java
     * [Java 数据类型](java/java_01)
     * [java 方法](java/java_02)
+    * JDBC
+      * [连接和原理](java_jdbc_01)
   * Other
     * [位运算符](bitoperation)
